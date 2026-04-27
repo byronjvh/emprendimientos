@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Emprendimientos</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #1A3E6C;
+        background: linear-gradient(180deg, rgba(26, 62, 108, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        background-repeat: no-repeat;
+        height: 100svh;
+        padding: 16px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        max-height: 900px;
+    }
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-size: 80px;
+        color: white;
+        text-align: center;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+    }
+
+    .titulo-destacado {
+        color: #fdc044;
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        color: white;
+        max-width: 900px;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .intro-destacado {
+        color: #1256f7;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .emprendimiento {
+        display: flex;
+    }
+
+    .emprendimientos-lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 16px;
+    }
+
+    .emprendimiento-imagen {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .emprendimiento-texto {
+        position: relative;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .emprendimiento-logo {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        outline: 2px solid white;
+    }
+
+    .emprendimiento-titulo {
+        font-size: 32px;
+    }
+
+    .emprendimiento-descripcion {
+        color: #444;
+        max-width: 600px;
+        text-align: left;
+        text-wrap: balance;
+    }
+
+    .emprendimiento-autor {
+        color: #000;
+        text-align: left;
+        font-style: italic;
+        font-weight: 500;
+        color: #fdc044;
+    }
+
+    .emprendimiento-enlaces {
+        display: flex;
+        gap: 8px;
+    }
+
+    .emprendimiento-enlaces-icon {
+        height: 24px;
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <div>
+            <h1>Talento que <span class="titulo-destacado">Emprende</span></h1>
+            <p class="intro">Descubre los emprendimientos de nuestros colaboradores: iniciativas llenas de
+                <span class="intro-destacado">
+                    creatividad,
+                    esfuerzo y pasión
+                </span>
+                que reflejan el talento que va más allá del trabajo diario.
+            </p>
+        </div>
+    </div>
+    <main class="emprendimientos">
+        <ul class="emprendimientos-lista">
+            <li>
+                <article class="emprendimiento">
+                    <div><img class="emprendimiento-imagen" src="/lista/pasteleria-ejemplo/pasteleria.avif"
+                            alt="pasteleria"></div>
+                    <div class="emprendimiento-texto">
+                        <img class="emprendimiento-logo" src="/lista/pasteleria-ejemplo/pasteleria-logo.avif"
+                            alt="pasteleria logo">
+                        <h4 class="emprendimiento-titulo">La Pastelería</h4>
+                        <p class="emprendimiento-descripcion">Pastelería familiar donde cada producto se prepara con
+                            ingredientes de calidad, cariño y ese sabor casero que encanta.</p>
+                        <p class="emprendimiento-autor">- por Juan Pablo Corella</p>
+                        <div class="emprendimiento-enlaces">
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/instagram.svg"
+                                    alt="instagram"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/whatsapp.svg"
+                                    alt="whatsapp"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/web.svg" alt="website"></a>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="emprendimiento">
+                    <div><img class="emprendimiento-imagen" src="/lista/pasteleria-ejemplo/pasteleria.avif"
+                            alt="pasteleria"></div>
+                    <div class="emprendimiento-texto">
+                        <img class="emprendimiento-logo" src="/lista/pasteleria-ejemplo/pasteleria-logo.avif"
+                            alt="pasteleria logo">
+                        <h4 class="emprendimiento-titulo">La Pastelería</h4>
+                        <p class="emprendimiento-descripcion">Pastelería familiar donde cada producto se prepara con
+                            ingredientes de calidad, cariño y ese sabor casero que encanta.</p>
+                        <p class="emprendimiento-autor">- por Juan Pablo Corella</p>
+                        <div class="emprendimiento-enlaces">
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/instagram.svg"
+                                    alt="instagram"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/whatsapp.svg"
+                                    alt="whatsapp"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/web.svg" alt="website"></a>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="emprendimiento">
+                    <div><img class="emprendimiento-imagen" src="/lista/pasteleria-ejemplo/pasteleria.avif"
+                            alt="pasteleria"></div>
+                    <div class="emprendimiento-texto">
+                        <img class="emprendimiento-logo" src="/lista/pasteleria-ejemplo/pasteleria-logo.avif"
+                            alt="pasteleria logo">
+                        <h4 class="emprendimiento-titulo">La Pastelería</h4>
+                        <p class="emprendimiento-descripcion">Pastelería familiar donde cada producto se prepara con
+                            ingredientes de calidad, cariño y ese sabor casero que encanta.</p>
+                        <p class="emprendimiento-autor">- por Juan Pablo Corella</p>
+                        <div class="emprendimiento-enlaces">
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/instagram.svg"
+                                    alt="instagram"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/whatsapp.svg"
+                                    alt="whatsapp"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/web.svg" alt="website"></a>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="emprendimiento">
+                    <div><img class="emprendimiento-imagen" src="/lista/pasteleria-ejemplo/pasteleria.avif"
+                            alt="pasteleria"></div>
+                    <div class="emprendimiento-texto">
+                        <img class="emprendimiento-logo" src="/lista/pasteleria-ejemplo/pasteleria-logo.avif"
+                            alt="pasteleria logo">
+                        <h4 class="emprendimiento-titulo">La Pastelería</h4>
+                        <p class="emprendimiento-descripcion">Pastelería familiar donde cada producto se prepara con
+                            ingredientes de calidad, cariño y ese sabor casero que encanta.</p>
+                        <p class="emprendimiento-autor">- por Juan Pablo Corella</p>
+                        <div class="emprendimiento-enlaces">
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/instagram.svg"
+                                    alt="instagram"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/whatsapp.svg"
+                                    alt="whatsapp"></a>
+                            <a href=""><img class="emprendimiento-enlaces-icon" src="/iconos/web.svg" alt="website"></a>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
