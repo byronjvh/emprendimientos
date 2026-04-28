@@ -40,11 +40,9 @@
         height: 100%;
         max-height: 880px;
         gap: 32px;
-    }
-
-    .hero {
         background-image: url(/ACS.png);
-        background
+        background-position: -550px top;
+        background-repeat: no-repeat;
     }
 
     .hero-texto {
@@ -315,6 +313,10 @@
         .emprendimientos-lista {
             grid-template-columns: repeat(2, auto);
         }
+
+        .hero {
+            background-position: -500px top;
+        }
     }
 
     @media screen and (min-width: 1100px) {
@@ -330,6 +332,10 @@
         .emprendimiento-imagen {
             max-width: 290px;
             max-height: 220px;
+        }
+
+        .hero {
+            background-position: center top;
         }
     }
 </style>
