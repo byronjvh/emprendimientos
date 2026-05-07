@@ -200,7 +200,8 @@
         overflow: hidden;
         width: 100%;
         max-width: 620px;
-        height: 380px;
+        height: 100%;
+        max-height: 420px;
         background-color: white;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
@@ -218,7 +219,6 @@
     .emprendimiento-imagen {
         width: 100%;
         height: 100%;
-        max-height: 200px;
         overflow: hidden;
     }
 
@@ -304,6 +304,9 @@
         padding: 3px;
         color: #555;
         transition: color .2s ease-out, transform .2s ease-out;
+        display: flex;
+        gap: 2px;
+        align-items: center;
     }
 
     .emprendimiento-enlaces a:hover {
@@ -335,12 +338,11 @@
 
         .emprendimiento {
             flex-direction: row;
-            height: 220px;
+            max-height: 260px;
         }
 
         .emprendimiento-imagen {
             max-width: 290px;
-            max-height: 220px;
         }
 
         .hero {
@@ -378,28 +380,30 @@
         <ul class="emprendimientos-lista">
             <li>
                 <article class="emprendimiento">
-                    <div class="emprendimiento-imagen"><img class="" src="/lista/pasteleria-ejemplo/pasteleria.avif"
-                            alt="pasteleria"></div>
+                    <div class="emprendimiento-imagen"><img class="" style="object-position: top;"
+                            src="/lista/pijamas-dass/PIJAMAS_DASS.png" alt="pijamas dass"></div>
                     <div class="emprendimiento-contenido">
                         <div class="emprendimiento-texto">
-                            <span class="tag">🍰 Gastronomía</span>
-                            <h4 class="emprendimiento-titulo">La Pastelería</h4>
-                            <p class="emprendimiento-descripcion">Pastelería familiar donde cada producto se prepara con
-                                ingredientes de calidad, cariño y ese sabor casero que encanta.</p>
+                            <span class="tag">👗 Moda</span>
+                            <h4 class="emprendimiento-titulo">Pijamas Dass</h4>
+                            <p class="emprendimiento-descripcion">Pijamas Dass es el emprendimiento de mi madre,
+                                profesional graduada del INA, dedicada a la confección, ajustes de uniformes y
+                                sublimación personalizada con acabados de alta calidad.</p>
                         </div>
                         <footer>
                             <div class="emprendimiento-autor">
-                                <img class="emprendimiento-autor-avatar"
-                                    src="/lista/pasteleria-ejemplo/pasteleria-logo.avif" alt="pasteleria logo">
+                                <img class="emprendimiento-autor-avatar" src="/lista/pijamas-dass/PIJAMAS_DASS_logo.png"
+                                    alt="pijamas dass logo">
                                 <div>
-                                    <p class="emprendimiento-autor-nombre"> Juan Pablo Corella</p>
-                                    <p class="emprendimiento-autor-departamento"> Depto. TI</p>
+                                    <p class="emprendimiento-autor-nombre">
+                                        Joselinne Vargas</p>
+                                    <p class="emprendimiento-autor-departamento"> Asesora Call Center</p>
                                 </div>
                             </div>
                             <div class="emprendimiento-enlaces">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href=""><i class="fa-solid fa-globe"></i></a>
+                                <a target="_blank" rel="noopenner noreferer" href="https://wa.me/50683636171"><i
+                                        class="fa-brands fa-whatsapp"></i><span style="font-size: 12px;">
+                                        8363-6171</span></a>
                             </div>
                         </footer>
                     </div>
@@ -407,28 +411,32 @@
             </li>
             <li>
                 <article class="emprendimiento">
-                    <div class="emprendimiento-imagen"><img class="" src="/lista/muebleria-ejemplo/muebleria.avif"
-                            alt="muebleria"></div>
+                    <div class="emprendimiento-imagen"><img class="" src="/lista/delicias-mi-tita/Delicias_mi_tita.jpeg"
+                            alt="delicias mi tita"></div>
                     <div class="emprendimiento-contenido">
                         <div class="emprendimiento-texto">
-                            <span class="tag">🪑 Carpintería</span>
-                            <h4 class="emprendimiento-titulo">Mueblería CH</h4>
-                            <p class="emprendimiento-descripcion">Mueblería enfocada en crear espacios cómodos y
-                                funcionales con muebles de calidad, diseño moderno y atención personalizada.</p>
+                            <span class="tag">🍰 Gastronomía</span>
+                            <h4 class="emprendimiento-titulo">Delicias Mi Tita</h4>
+                            <p class="emprendimiento-descripcion">Delicias Mi Tita ofrece productos artesanales como
+                                miel, café, mermeladas, aceites saborizados, pan casero y repostería, elaborados con
+                                sabor tradicional y dedicación.</p>
                         </div>
                         <footer>
                             <div class="emprendimiento-autor">
                                 <img class="emprendimiento-autor-avatar"
-                                    src="/lista/muebleria-ejemplo/muebleria-avatar.avif" alt="pasteleria logo">
+                                    src="/lista/delicias-mi-tita/delicias-mi-tita-logo.webp"
+                                    alt="delicias mi tita logo">
                                 <div>
-                                    <p class="emprendimiento-autor-nombre"> Carlos Hernández</p>
-                                    <p class="emprendimiento-autor-departamento"> Depto. Ventas</p>
+                                    <p class="emprendimiento-autor-nombre"> Nicole Carrazco</p>
+                                    <p class="emprendimiento-autor-departamento"> Asesora Call Center</p>
                                 </div>
                             </div>
                             <div class="emprendimiento-enlaces">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href=""><i class="fa-solid fa-globe"></i></a>
+                                <a href="https://www.facebook.com/share/1B7AdZzrSy/"><i
+                                        class="fa-brands fa-facebook"></i><span style="font-size: 12px;">
+                                        Ver página
+                                    </span>
+                                </a>
                             </div>
                         </footer>
                     </div>
